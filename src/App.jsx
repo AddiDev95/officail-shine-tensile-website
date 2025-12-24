@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-import CustomTensileRoofing from "./pages/CustomTensileroofing";
+import CustomTensileRoofing from "./pages/CustomTensileRoofing";
 import ArchitecturalMembranes from "./pages/ArchitecturalMembranes";
 import OutdoorShadeCanopies from "./pages/OutdoorShadeCanopies";
 import EventPavilionStructures from "./pages/EventPavilionStructures";
