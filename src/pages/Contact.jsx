@@ -114,14 +114,25 @@ export default function Contact() {
           </p>
 
           <div className="flex justify-center gap-6 mt-6">
+         
             <a
-              href="https://wa.me/919654270195"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#25D366] text-white px-6 py-3 rounded-xl shadow hover:scale-105 transition transform"
-            >
-              WhatsApp
-            </a>
+  href="https://wa.me/919654270195"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => {
+    if (window.gtag) {
+      window.gtag("event", "whatsapp_click", {
+        event_category: "engagement",
+        event_label: "WhatsApp Contact Button",
+      });
+    }
+  }}
+  className="bg-[#25D366] text-white px-8 py-4 rounded-xl"
+>
+  Chat on WhatsApp
+</a>
+
+
             <a
               href="mailto:shinestructure470@gmail.com"
               className="bg-[#0077b6] text-white px-6 py-3 rounded-xl shadow hover:scale-105 transition transform"
