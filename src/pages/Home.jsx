@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 import hero1 from "../assets/img/mainHero/main1.jpg";
 import hero2 from "../assets/img/mainHero/main2.jpg";
@@ -13,6 +14,16 @@ import service3 from "../assets/img/out.hero.jpg";
 import service4 from "../assets/img/event.hero.jpg";
 import service5 from "../assets/img/indu.hero.jpg";
 
+
+<Helmet>
+<title>Shine Tensile Structure | Premium Tensile & Canopy Solutions</title>
+<meta
+  name="description"
+  content="We design and install premium tensile structures, shade canopies, industrial fabric covers and architectural membranes across India."
+/>
+<link rel="canonical" href="https://shinetensilestructure.in/" />
+</Helmet>
+
 const Home = () => {
   const heroImages = [hero1, hero2, hero3, hero4, hero5];
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -23,6 +34,8 @@ const Home = () => {
     }, 4000);
     return () => clearInterval(interval);
   }, [heroImages.length]);
+
+ 
 
   const theme = {
     primary: "#03045e",
