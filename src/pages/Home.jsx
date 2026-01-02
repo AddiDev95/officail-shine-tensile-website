@@ -15,14 +15,6 @@ import service4 from "../assets/img/event.hero.jpg";
 import service5 from "../assets/img/indu.hero.jpg";
 
 
-<Helmet>
-<title>Shine Tensile Structure | Premium Tensile & Canopy Solutions</title>
-<meta
-  name="description"
-  content="We design and install premium tensile structures, shade canopies, industrial fabric covers and architectural membranes across India."
-/>
-<link rel="canonical" href="https://shinetensilestructure.in/" />
-</Helmet>
 
 const Home = () => {
   const heroImages = [hero1, hero2, hero3, hero4, hero5];
@@ -114,6 +106,16 @@ const testimonials = [
   return (
     <main className="font-sans">
 
+      {/* SEO META */}
+    <Helmet>
+      <title>Tensile Structure Manufacturer in India | Shine Tensile Structure</title>
+      <meta
+        name="description"
+        content="Shine Tensile Structure is a leading tensile structure manufacturer in India offering car parking, canopy, walkway & membrane tensile solutions."
+      />
+      <link rel="canonical" href="https://shinetensilestructure.in/" />
+    </Helmet>
+
       {/* HERO SLIDER */}
       <section style={{ position: "relative", height: "80vh", overflow: "hidden" }}>
         {heroImages.map((img, index) => (
@@ -152,11 +154,13 @@ const testimonials = [
           }}
         >
           <div>
-            <h1 style={{ color: theme.highlight, fontSize: "3rem", fontWeight: 700 }}>
-              High-Performance Tensile Membrane Structures
-            </h1>
+          <h1 style={{ color: theme.highlight, fontSize: "3rem", fontWeight: 700 }}>
+  Tensile Structure Manufacturer & Supplier in India
+</h1>
+
             <p style={{ marginTop: 16, color: theme.highlight }}>
-              Innovative, durable, and visually striking architectural fabric solutions.
+            Leading tensile structure manufacturer in India delivering durable, innovative, and high-performance tensile membrane structures for commercial and industrial projects.
+
             </p>
           </div>
         </div>
@@ -212,12 +216,11 @@ const testimonials = [
           color: "#333",
         }}
       >
-        Shine Tensile Structure is a leading provider of innovative tensile
-        membrane and architectural fabric solutions, delivering visually
-        striking, durable, and cost-effective structures for modern spaces.
-        Our expertise spans across commercial, industrial, and public
-        infrastructure projects, where design excellence meets engineering
-        precision.
+        Shine Tensile Structure is a trusted tensile structure manufacturer in India,
+specializing in high-performance tensile membrane structures for commercial,
+industrial, and public infrastructure projects. We deliver innovative, durable,
+and aesthetically superior tensile solutions across India.
+
       </p>
 
       <p
@@ -228,11 +231,12 @@ const testimonials = [
           color: "#333",
         }}
       >
-        We specialize in creating lightweight yet high-performance tensile
-        systems that enhance aesthetics while providing superior weather
-        resistance and structural integrity. From concept and design to
-        fabrication and installation, our team ensures every project meets
-        the highest standards of quality, safety, and innovation.
+        We design, fabricate, and install custom tensile structures using premium PVC,
+PTFE, and HDPE fabrics supported by precision-engineered steel frameworks.
+From car parking tensile structures and walkway canopies to large-scale
+architectural membrane systems, our solutions are built to perform in all
+climatic conditions.
+
       </p>
 
       <div
@@ -280,7 +284,7 @@ const testimonials = [
     <div style={{ position: "relative" }}>
       <img
         src={hero1}
-        alt="Tensile structure"
+        alt="tensile structure manufacturer in India"
         style={{
           width: "100%",
           borderRadius: "16px",

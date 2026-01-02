@@ -10,7 +10,7 @@ import parking from "../assets/img/service5.jpg";
 export default function Services() {
   const services = [
     {
-      title: "Custom Tensile Roofing",
+      title: "Custom Tensile Roofing Structures",
       desc: "High-performance tensile roofing systems designed for durability, aesthetics, and long-term performance.",
       img: roofing,
       link: "/services/custom-tensile-roofing",
@@ -112,7 +112,7 @@ export default function Services() {
         <div className="rounded-3xl overflow-hidden shadow-2xl bg-white">
           <img
             src={services[0].img}
-            alt="Tensile Structures"
+            alt="car parking tensile structure manufacturer in India"
             className="w-full h-[460px] object-cover"
           />
         </div>
